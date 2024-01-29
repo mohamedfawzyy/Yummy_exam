@@ -1,0 +1,174 @@
+/* global css */
+:root{
+
+}
+::placeholder{
+  color: hsl(0, 0%, 60%) !important;
+}
+
+body{
+    height: 100vh;
+    background-color: black;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+
+/* nav */
+nav{
+    left: -300px;
+}
+.logo img{
+    width:80px;
+}
+.navLinks{
+    width: 300px;
+}
+.navLinks li {
+    cursor: pointer;
+    padding-inline: 10px;
+    padding-block: .9375rem;
+    font-size: 1.5rem;
+    display: none;
+    
+}
+nav i{
+    padding:2px;
+}
+.logo i.controlNav {
+ font-weight: 900;
+ line-height:32px ;
+ cursor: pointer;
+}
+/* search inputs */
+.search input{
+  background-color: transparent ;
+  color:white;
+}
+.form-control:focus{
+  background-color: transparent ;
+  color:white;
+}
+/* home section */
+#home{
+    width: calc(100% - 96px);
+    margin-left: auto;
+}
+.card{
+  cursor: pointer;
+}
+.card .card-img-overlay{
+    top: 110%;
+    color: black;
+    background-color: rgba(255, 255, 255,0.7);
+    transition: top 0.5s;
+}
+.card:hover .card-img-overlay{
+    top: 0;
+}
+/* /////////////////////////////////////////////////// */
+/* detaisls card */
+.card.details{
+  cursor:auto;
+}
+.card.details ul li{
+padding: 10px;
+}
+.recipes li{
+  background-color: #CFF4FC;
+  border-radius:5px;
+  color:#055160;
+  margin-right: 8px;
+  margin-bottom: 8px;
+
+
+}
+.tags li{
+  background-color: #F8D7DA;
+  border-radius:5px;
+  color:#842029;
+  margin-right: 8px;
+  margin-bottom: 8px;
+}
+/* looooooder */
+.loading{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+  
+}
+.loader {
+    width: 48px;
+    height: 48px;
+    position: relative;
+  }
+  .loader::before , .loader::after{
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50% , -50%);
+    width: 48em;
+    height: 48em;
+    background-image:
+      radial-gradient(circle 10px, #FFF 100%, transparent 0),
+      radial-gradient(circle 10px, #FFF 100%, transparent 0),
+      radial-gradient(circle 10px, #FFF 100%, transparent 0),
+      radial-gradient(circle 10px, #FFF 100%, transparent 0),
+      radial-gradient(circle 10px, #FFF 100%, transparent 0),
+      radial-gradient(circle 10px, #FFF 100%, transparent 0),
+      radial-gradient(circle 10px, #FFF 100%, transparent 0),
+      radial-gradient(circle 10px, #FFF 100%, transparent 0);
+    background-position: 0em -18em, 0em 18em, 18em 0em, -18em 0em,
+                         13em -13em, -13em -13em, 13em 13em, -13em 13em;
+      background-repeat: no-repeat;
+    font-size: 0.5px;
+    border-radius: 50%;
+    animation: blast 1s ease-in infinite;
+  }
+  .loader::after {
+    font-size: 1px;
+    background: #fff;
+    animation: bounce 1s ease-in infinite;
+  }
+  
+  @keyframes bounce {
+    0% , 100%{ font-size: 0.75px }
+    50% { font-size: 1.5px }
+  }
+  @keyframes blast {
+    0% , 40% {
+      font-size: 0.5px;
+    }
+    70% {
+      opacity: 1;
+      font-size: 4px;
+    }
+     100% {
+       font-size: 6px;
+      opacity: 0;
+    }
+  }
+  /* .main-container > div.row{
+    background-color: red;
+  } */
+  /* form  */
+  .inputForm .form-control:focus {
+    background-color:white;
+    color: black;;
+  }
+  .invalid-feedback{
+    display: none;
+    background-color: #F8D7DA;
+    color:#842029 ;
+    border-radius: 10px;
+    padding: 15px;
+    font-size:24px ;
+  }

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--  css links -->
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <nav class=" d-flex position-fixed top-0 bottom-0 z-3 ">
+        <div class="navLinks d-flex flex-column justify-content-between bg-black py-5 px-3">
+            <ul class="list-unstyled">
+                <li id="searchForm"><a href="#">Search</a></li>
+                <li class="partion"><a href="#">Categories</a></li>
+                <li class="partion"><a href="#">Area</a></li>
+                <li class="partion"><a href="#">Ingredients</a></li>
+                <li id="userForm"><a href="#">Contact Us</a></li>
+            </ul>
+            <div >
+                <div class="socialLinks text-white px-3">
+                    <i class="fa-brands fa-facebook "></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-solid fa-globe"></i>
+                    <p class="">
+                        Copyright Â© 2019 All Rights Reserved.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="logo bg-white d-flex flex-column justify-content-between align-items-center py-5 px-2">
+            <img src="./assets/images/logo.png" alt="">
+            <i class="controlNav fa-solid fa-bars fa-4x"></i>
+            <div class="d-flex flex-column">
+                <i class="fa-solid fa-globe"></i>
+                <i class="fa-solid fa-share-nodes"></i>
+            </div>
+        </div>
+    </nav>
+    <section id="home" class="vh-100 ">
+        <div class="main-container px-3 py-5">
+            <div class="container search d-none ">
+                <div class="row mb-5">
+                    <div class="col input-group-lg">
+                      <input type="text" class="form-control " placeholder="Search By Name" >
+                    </div>
+                    <div class="col input-group-lg">
+                      <input type="text" class="form-control" maxlength="1" placeholder="Search By First Letter" >
+                    </div>
+                </div>
+            </div>
+            <div class="inputForm d-none  vh-100  d-flex align-items-center justify-content-center">
+                <form class=" w-75 text-center">
+                   
+                        <div class="row mb-3 ">
+                            <div class="col">
+                              <input type="text" class="form-control" name="name" placeholder="Enter Your Name">
+                              <div class="invalid-feedback">
+                                Special characters and numbers not allowed
+                              </div>
+                            </div>
+                            <div class="col">
+                              <input type="email" class="form-control" name="email" placeholder="Enter Your Email">
+                              <div class="invalid-feedback">
+                                Email not valid *exemple@yyy.zzz
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row mb-3">
+                            <div class="col">
+                              <input type="text" class="form-control" name="phone" placeholder="Enter Your Phone" required>
+                              <div class="invalid-feedback">
+                                Enter valid Phone Number
+                              </div>
+                            </div>
+                            <div class="col">
+                              <input type="number" class="form-control" name="age" placeholder="Enter your Age" >
+                              <div class="invalid-feedback">
+                                Enter valid age
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row mb-3">
+                            <div class="col">
+                              <input type="password" class="form-control" name="password" placeholder="Enter Your Password" >
+                              <div class="invalid-feedback">
+                                Enter valid password *Minimum eight characters, at least one letter and one number:*
+                              </div>
+                            </div>
+                            <div class="col">
+                              <input name="repassword"type="password" class="form-control" placeholder="RePassword" >
+                              <div class="invalid-feedback">
+                                Enter valid repassword
+                              </div>
+                            </div>
+                          </div>
+                    <button type="submit" class="btn btn-outline-danger" disabled>Submit</button>
+                  </form>
+            </div>
+            <div class="row gy-4">
+            </div>
+        </div> 
+    </section>
+     <!-- loooooooding -->
+     <div class="loading d-none">
+        <span class="loader"></span>
+    </div>
+    <!-- scripts -->
+    <script src="./js/jquery-3.7.1.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js" type="module"></script>
+</body>
+</html>
